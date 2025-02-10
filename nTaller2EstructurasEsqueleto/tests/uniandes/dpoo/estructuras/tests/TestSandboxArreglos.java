@@ -76,7 +76,7 @@ class TestSandboxArreglos
     @Test
     void testGetCopiaEnteros( )
     {
-        int[] copia = sencillo.getCopiaEnteros( );
+        int[] copia = sencillo.getCopiaEnteros();
 
         assertEquals( enterosSencillos.length, copia.length, "El arreglo retornado no tiene la cantidad de elementos esperados" );
         for( int i = 0; i < enterosSencillos.length; i++ )
@@ -85,7 +85,7 @@ class TestSandboxArreglos
         }
 
         copia[ 0 ] = 999;
-        int[] copia2 = sencillo.getCopiaEnteros( );
+        int[] copia2 = sencillo.getCopiaEnteros();
         assertFalse( copia[ 0 ] == copia2[ 0 ], "Dos llamados al método retornaron el mismo arreglo" );
     }
 
